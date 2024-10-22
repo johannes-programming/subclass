@@ -5,7 +5,7 @@ __all__ = ["test"]
 
 def test():
     loader = unittest.TestLoader()
-    tests = loader.discover(start_dir="subclass.tests")
+    tests = loader.discover(start_dir="v440.tests")
     runner = unittest.TextTestRunner()
     result = runner.run(tests)
     return result
